@@ -65,7 +65,9 @@ Add the TTSegmentedControl.swift file to your project.
 ```
 let segmentedControl = TTSegmentedControl()
 segmentedControl.allowChangeThumbWidth = false
+segmentedControl.hasBounceAnimation = true
 segmentedControl.frame = CGRect(x: 50, y: 200, width: 100, height: 50)
+segmentedControl.itemTitles = ["Item 1", "Item 2", "Item 3"]
 segmentedControl.didSelectItemWith = { (index, title) -> () in
     print("Selected item \(index)")
 }
